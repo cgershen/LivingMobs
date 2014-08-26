@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Dona Datos</string>
+    <string name="iniciarServicio">Start Service</string>
+    <string name="localizarme">Geolocation Service</string>
+    <string name="gps">GPS</string>
+    <string name="network">NETWORK</string>
+    <string name="DonaDatos">Dona Datos</string>
+    <string name="tipoLoc">Type Of Location</string>
+    <string name="action_settings">Settings</string>
+    <string name="descImg">background</string>
+    <string name="botonAceptarTerminos">Terms And Conditions</string>
+    <string name="checkAceptarTerminos">Accept Terms And Conditions</string>
+	<string name="continuar">Next</string>
+	<string name="salir">Exit</string>
+    <string name="acercaDe">About</string>
+    <string name="acceptTerms">You must accept the terms and conditions</string>
+    <string name="service">Service started</string>
+    <string name="gpsApagado">GPS Off</string>
+    <string name="gpsActivated">Want to activate?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="acercaDeM">Dona Datos Build: V1.1</string>
+    <string name="aceptar">Accept</string>
+    <string name="cancelar">Cancel</string>
+    <string name="salirApp">Do you want to close the app?</string>
+	<string name="serviceStop">service stopped</string>
+	
+	<string name="generalidades">I.	GENERALIDADES. Al instalar esta Aplicación, el usuario acepta los presentes términos de uso. Deben leerse detenidamente antes de instalar la aplicación y/o de aceptar los términos.</string>
+    <string name="definiciones">II.	DEFINICIONES. Por Dona Datos se entiende el software facilitado por Living Mobilities para ofrecer servicios relacionados con el mejoramiento de la movilidad en la Ciudad de México, sus servicios o los servicios de sus socios, para ser utilizado en dispositivos con los sistemas operativos Android OS, así como sus actualizaciones periódicas y cualquier otro software o documentación que permita utilizar esta Aplicación.</string>
+    <string name="proteccion">III.	PROTECCIÓN DE DATOS. Cualquier información personal que se facilite a Dona Datos durante el uso de la Aplicación se utilizará únicamente en conformidad con la Política de Privacidad de Living Mobilties.</string>
+    <string name="dd">IV.	Dona Datos se compromete a proteger su privacidad. Asimismo, nos tomamos muy seriamente nuestra responsabilidad en lo referente a la seguridad de los datos del usuario. Esta política explica cómo tratamos los datos del usuario y cómo protegemos su privacidad.</string>
+    <string name="ddusodatost">1.	Uso de los datos del usuario.</string>
+    <string name="ddusodatosm">Necesitamos ciertos datos para poder procesar mapas de calor de la Ciudad de México que determinen las diferentes rutas como opciones para los trayectos de los usuarios. Dona Datos almacena los datos facilitados por usted y la información obtenida a través del uso que usted hace de nuestros servicios y las visitas que realiza a nuestra página web y otras páginas accesibles desde esta.</string>
+    <string name="seguridadt">2.	Seguridad para la protección de la información y el almacenamiento de datos</string>
+    <string name="seguridadm">Cada vez que se registran los datos de geolocalización, estos se transmiten por Internet de forma segura mediante una encriptación de alto grado (128 bit). Asimismo, tal y como exigen las Leyes de protección de datos, seguimos estrictos procedimientos de seguridad para el almacenamiento y la revelación de los datos que nos facilitan nuestros usuarios, con el fin de evitar posibles accesos no autorizados. Estas medidas no son aplicables cuando exista un imperativo legal que exija la transmisión de sus datos a una tercera parte. Conservaremos sus datos durante un periodo de tiempo razonable o durante el periodo legal exigido.</string>
+    <string name="licencia">V.	LICENCIA Y DERECHOS DE PROPIEDAD. Todas las marcas, derechos de autor, bases de datos y otros derechos de propiedad intelectual de la Aplicación, cualquiera que sea su naturaleza, así como el código fuente, son propiedad de Living Mobilities o los licenciadores de Living Mobilities.</string>
+    <string name="presente">VI.	Por el presente, Living Mobilities ofrece una licencia revocable, gratuita, no exclusiva y de carácter internacional para utilizar esta Aplicación en el ámbito personal o profesional dentro de los límites establecidos por estos términos de la aplicación.</string>
+    <string name="condiciones">VII.	CONDICIONES DE USO. El usuario no actuará ni permitirá que terceras personas actúen en su nombre para (i) hacer y distribuir copias de la aplicación; (ii) intentar copiar, reproducir, alterar, modificar, hacer ingeniería inversa, desarmar, descompilar, transferir, intercambiar o traducir la Aplicación; (iii) crear ninguna clase de proyecto derivado de la Aplicación.</string>
+    <string name="aplicacion">VIII.	La Aplicación se entrega al usuario de manera gratuita para su uso personal y no comercial. Living Mobilities se reserva el derecho a modificar o deshabilitar la Aplicación en cualquier momento y por cualquier motivo, así como a aplicar recargos económicos por la aplicación o el servicio facilitado al usuario en conformidad con los presentes términos.</string>
+    <string name="usuario">IX.	Si el usuario no es el titular de facturación del teléfono o dispositivo móvil utilizado para acceder a la Aplicación, se asumirá que tiene permiso del titular para utilizar la Aplicación.</string>
+    <string name="disponibilidad">X.	DISPONIBILIDAD. Esta Aplicación está disponible para los dispositivos móviles portátiles que funcionen con los sistemas operativos Android OS. Living Mobilities hará todos los esfuerzos razonables para que la Aplicación esté disponible en todo momento. No obstante, el usuario acepta que la entrega de la Aplicación se realizará a través de internet y de las redes móviles y que, en consecuencia, la calidad y disponibilidad de la Aplicación pueden verse afectadas por factores ajenos al control responsable de Living Mobilities.</string>
+    <string name="living">XI.	Living Mobilities junto con el grupo de desarrolladores no se hacen responsables de la no disponibilidad de la Aplicación, de las dificultades o de la imposibilidad de descargar o acceder a su contenido, ni de ningún otro fallo en el sistema de comunicación que pudiera provocar que la Aplicación no esté disponible.</string>
+    <string name="responsable">XII.	Living Mobilities no se hará responsable del servicio técnico ni del mantenimiento de la Aplicación.</string>
+    <string name="requisitos">XIII.	REQUISITOS DEL SISTEMA. Para poder utilizar la Aplicación, el usuario debe tener un teléfono o dispositivo móvil compatible, con conexión a internet y que cumpla las especificaciones mínimas.</string>
+    <string name="reqsoft">XIV.	Los requisitos del software son los siguientes: Dispositivos Android OS con los sistemas operativos Android OS 2.3.3 a OS 4.4; Idioma: inglés y español.</string>
+    <string name="version">XV.	La versión del software de la aplicación puede sufrir actualizaciones periódicas para añadir compatibilidad con nuevas funciones y servicios.</string>
+    <string name="finalizar">XVI.	Living Mobilities puede finalizar el uso de la Aplicación en cualquier momento previa notificación al usuario.</string>
+    <string name="fin">XVII.	Al finalizar dicho uso, (a) también se pondrá fin a todos los derechos y licencias otorgados al usuario; (b) el usuario deberá dejar de utilizar el software;</string>
+    <string name="limitacion">XVIII.	LIMITACIÓN DE RESPONSABILIDADES. En ningún caso se podrá hacer responsable a Living Mobilities de ningún tipo de pérdidas o daños directos, indirectos, especiales, punitivos, ejemplares o consecuentes, derivados del uso o el acceso a la Aplicación, incluida la pérdida de beneficios y similares, se deban o no a la falta de cumplimiento por parte de las partes, ya sea por infracción del contrato, agravio (incluida negligencia), responsabilidad del producto u otros.</string>
+    <string name="noresponsable">XIX.	Living Mobilites no se hará responsable de ningún daño o alteración en los equipos del usuario como resultado de la instalación o el uso de la Aplicación, incluyendo, pero sin limitarse a, equipos informáticos, dispositivos portátiles o teléfonos móviles.</string>
+    <string name="easy">XX.	Ningún aspecto de estos términos de la aplicación excluye o limita la responsabilidad de easyJet en relación a lesiones personales o la muerte por negligencia, el fraude o las distorsiones fraudulentas, o cualquier otra responsabilidad que no se pueda excluir o limitar por ley.</string>
+    <string name="exencion">XXI.	EXENCIÓN DE RESPONSABILIDAD PARA LAS GARANTÍAS. Con el fin de evitar dudas y de acuerdo con lo máximo permitido por la ley, Living Mobilities se exime de cualquier responsabilidad en relación a todas las garantías implícitas derivadas de la aplicación.</string>
+
+</resources>

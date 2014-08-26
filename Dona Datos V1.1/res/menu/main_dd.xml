@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.iimas.donadatosv1_1.MainDDActivity" >
+
+    <item
+        android:id="@+id/menuSalir"
+        android:orderInCategory="1"
+        android:showAsAction="always"
+        android:icon="@drawable/stop_24"
+        android:title="@string/salir"/>
+    <item
+        android:id="@+id/menuAcercaDe"
+        android:orderInCategory="2"
+        android:showAsAction="always"
+        android:icon="@drawable/help_24"
+        android:title="@string/acercaDe"/>    
+
+</menu>
