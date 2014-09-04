@@ -11,6 +11,10 @@ import android.location.LocationManager;
 import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
 import android.support.v7.app.ActionBarActivity;
+import android.text.Html;
+import android.text.SpannableString;
+import android.text.method.LinkMovementMethod;
+import android.text.util.Linkify;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -36,14 +40,14 @@ public class MainDDActivity extends ActionBarActivity {
 	RadioGroup rGroup;			//RadioGroup
 	Button btnIniciar;			//Button iniciar servicio
 	Button btnTerminos;
-	CheckBox checkTerminos;
-	boolean aceptar = false;
+	TextView checkTerminos;
+	//boolean aceptar = false;
 	Button btnContinuar;
 	LinearLayout boxTermsAndConditions, boxTipoLocalizacion;
 	String Terminos = "";
 
 	//Typeface fontOstrich;		//Fuente de la palicacion
-	Typeface fontHoboStd;
+	Typeface Helvetica;
 	public LocationManager mLocationManager;		//Objeto LocationManager
 	public static boolean gps=false, network = false;
 	
@@ -60,7 +64,7 @@ public class MainDDActivity extends ActionBarActivity {
 		boxTermsAndConditions = (LinearLayout) findViewById(R.id.boxTermsAndConditions);
 		boxTipoLocalizacion = (LinearLayout) findViewById(R.id.boxTipoLocalizacion);
 		boxTipoLocalizacion.setVisibility(View.GONE);
-		checkTerminos = (CheckBox) findViewById(R.id.checkTerminos);
+		checkTerminos = (TextView) findViewById(R.id.checkTerminos);
 		btnContinuar = (Button) findViewById(R.id.botonContinuar);
 		btnTerminos = (Button) findViewById(R.id.botonTerminos);
 		
@@ -83,24 +87,25 @@ public class MainDDActivity extends ActionBarActivity {
 
 		
 		//fontOstrich = Typeface.createFromAsset(getAssets(), "ostrich-black.ttf");
-		fontHoboStd = Typeface.createFromAsset(getAssets(), "HoboStd.otf");
+		Helvetica = Typeface.createFromAsset(getAssets(), "Helvetica.otf");
 		asignarFuente();	//Llamada al metodo asignarFuente()
 		
-		// Reaccionar a eventos del CheckBox
-		checkTerminos.setOnClickListener(new CheckBox.OnClickListener() {
-			@Override
-			public void onClick(View v) {
-				if (checkTerminos.isChecked())aceptar = true;
-				else aceptar = false;
-			}
-		});
-		// Fin respecto al checkbox
+//		// Reaccionar a eventos del CheckBox
+//		checkTerminos.setOnClickListener(new CheckBox.OnClickListener() {
+//			@Override
+//			public void onClick(View v) {
+//				if (checkTerminos.isChecked())aceptar = true;
+//				else aceptar = false;
+//			}
+//		});
+//		// Fin respecto al checkbox
 		// Reaccionar a eventos del boton botonContinuar
 		btnContinuar.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				if (aceptar) goToContinue();
-				else {imprimir(getResources().getString(R.string.acceptTerms));}
+				//if (aceptar) 
+				goToContinue();
+				//else {imprimir(getResources().getString(R.string.acceptTerms));}
 			}
 		});// Fin respecto al boton botonContinuar
 
@@ -194,32 +199,20 @@ public class MainDDActivity extends ActionBarActivity {
 	 */
 	public String getTerminos(){
 		String terminos="";
-		terminos=getResources().getString(R.string.generalidades)+"\n\n";
-		terminos+=getResources().getString(R.string.definiciones)+"\n\n";
-		terminos+=getResources().getString(R.string.proteccion)+"\n\n";
-		terminos+=getResources().getString(R.string.dd)+"\n\n";
-		terminos+=getResources().getString(R.string.ddusodatost);
-		terminos+=getResources().getString(R.string.ddusodatosm)+"\n\n";
-		terminos+=getResources().getString(R.string.seguridadt);
-		terminos+=getResources().getString(R.string.seguridadm)+"\n\n";
-		terminos+=getResources().getString(R.string.licencia)+"\n\n";
-		terminos+=getResources().getString(R.string.presente)+"\n\n";
-		terminos+=getResources().getString(R.string.condiciones)+"\n\n";
-		terminos+=getResources().getString(R.string.aplicacion)+"\n\n";
-		terminos+=getResources().getString(R.string.usuario)+"\n\n";
-		terminos+=getResources().getString(R.string.disponibilidad)+"\n\n";
-		terminos+=getResources().getString(R.string.living)+"\n\n";
-		terminos+=getResources().getString(R.string.responsable)+"\n\n";
-		terminos+=getResources().getString(R.string.requisitos)+"\n\n";
-		terminos+=getResources().getString(R.string.reqsoft)+"\n\n";
-		terminos+=getResources().getString(R.string.version)+"\n\n";
-		terminos+=getResources().getString(R.string.finalizar)+"\n\n";
-		terminos+=getResources().getString(R.string.fin)+"\n\n";
-		terminos+=getResources().getString(R.string.limitacion)+"\n\n";
-		terminos+=getResources().getString(R.string.noresponsable)+"\n\n";
-		terminos+=getResources().getString(R.string.easy)+"\n\n";
-		terminos+=getResources().getString(R.string.exencion);
-		
+		terminos=getResources().getString(R.string.aviso)+"\n\n\n";
+		terminos+=getResources().getString(R.string.fundamento)+"\n\n";
+		terminos+=getResources().getString(R.string.informacion)+"\n\n";
+		terminos+=getResources().getString(R.string.nombre)+"\n";
+		terminos+=getResources().getString(R.string.correo)+"\n";
+		terminos+=getResources().getString(R.string.ubicacion)+"\n";
+		terminos+=getResources().getString(R.string.traslados)+"\n\n";
+		terminos+=getResources().getString(R.string.importante)+"\n\n";
+		terminos+=getResources().getString(R.string.derechos)+" ";
+		terminos+=getResources().getString(R.string.sitio)+"\n\n";
+		terminos+=getResources().getString(R.string.objetivo)+"\n\n\n";
+		terminos+=getResources().getString(R.string.colaborando)+"\n\n";
+		terminos+=getResources().getString(R.string.audi)+"\n\n";
+		terminos+=getResources().getString(R.string.desarrollar);
 		return terminos;
 	}
 	
@@ -227,10 +220,21 @@ public class MainDDActivity extends ActionBarActivity {
 	// Evento para mostrar el cuadro de dialogo de los terminos y condiciones
 	public void showTermsAndConditions(View v) {
 		if(Terminos.equals("")) Terminos = getTerminos();
-		AlertDialog LDialog = new AlertDialog.Builder(v.getContext())
-				.setTitle(getResources().getString(R.string.botonAceptarTerminos))
-				.setMessage(Terminos)
-				.setPositiveButton(android.R.string.ok, null).create();
+			  final TextView message = new TextView(v.getContext());
+			  // i.e.: R.string.dialog_message =>
+			            // "Test this dialog following the link to dtmilano.blogspot.com"
+			  final SpannableString s = 
+			               new SpannableString(Terminos);
+			  Linkify.addLinks(s, Linkify.WEB_URLS);
+			  message.setText(s);
+			  message.setMovementMethod(LinkMovementMethod.getInstance());
+
+			  AlertDialog LDialog = new AlertDialog.Builder(v.getContext())	
+			   .setTitle(getResources().getString(R.string.botonAceptarTerminos))
+			   .setCancelable(true)
+			   .setPositiveButton(android.R.string.ok, null)
+			   .setView(message)
+			   .create();
 		LDialog.show();
 	}// fin de metodo mostrar terminos y condiciones
 	// Metodo para ocultar los componentes principales y muestra los componentes para configurar la localizacion
@@ -254,13 +258,13 @@ public class MainDDActivity extends ActionBarActivity {
 	 * 	Aplica la fuente ostrich-black a la interfaz de usuario
 	 */
 	protected void asignarFuente() {
-		TvTipoLoc.setTypeface(fontHoboStd);
-		RbGps.setTypeface(fontHoboStd);
-		RbNetwork.setTypeface(fontHoboStd);
-		btnIniciar.setTypeface(fontHoboStd);
-		checkTerminos.setTypeface(fontHoboStd);
-		btnContinuar.setTypeface(fontHoboStd);
-		btnTerminos.setTypeface(fontHoboStd);
+		TvTipoLoc.setTypeface(Helvetica);
+		RbGps.setTypeface(Helvetica);
+		RbNetwork.setTypeface(Helvetica);
+		btnIniciar.setTypeface(Helvetica);
+		checkTerminos.setTypeface(Helvetica);
+		btnContinuar.setTypeface(Helvetica);
+		btnTerminos.setTypeface(Helvetica);
 	}
 	
 	/**
